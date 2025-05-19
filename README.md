@@ -116,7 +116,7 @@ Contributions and suggestions are welcome! Feel free to open issues or submit pu
 
 ## Cite
 ```
-@misc{SkyworkSuperAgents,
+@misc{AgentScope,
   title =        {`AgentScope`: A Hierarchical Multi-Agent Framework for General-Purpose Task Solving.},
   author =       {Wentao Zhang, Ce Cui, Yang Liu, Bo An},
   howpublished = {\url{https://github.com/DVampire/AgentScope}},
