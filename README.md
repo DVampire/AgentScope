@@ -4,7 +4,7 @@ AgentScope: A Hierarchical Multi-Agent Framework for General-Purpose Task Solvin
 
 ## Introduction
 
-AgentScope is a hierarchical multi-agent system designed for general-purpose task solving. The framework leverages a top-level planning agent to coordinate multiple specialized lower-level agents, enabling automated decomposition and efficient execution of complex tasks. Our goal is to integrate mainstream agent systems into our framework, enabling the construction of a general-purpose and versatile multi-agent system. SkyworkSuperAgents is developed on top of this framework.
+AgentScope is a hierarchical multi-agent system designed for general-purpose task solving. The framework leverages a top-level planning agent to coordinate multiple specialized lower-level agents, enabling automated decomposition and efficient execution of complex tasks. Our goal is to integrate mainstream agent systems into our framework, enabling the construction of a general-purpose and versatile multi-agent system. [DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) is developed on top of this framework.
 
 ## Architecture
 
