@@ -6,7 +6,6 @@ import sys
 from pathlib import Path
 import pandas as pd
 from typing import List
-import threading
 import json
 from datetime import datetime
 import asyncio
