@@ -67,6 +67,6 @@ ADDITIONALLY, your FINAL ANSWER MUST adhere to any formatting instructions speci
     response = response.content
 
     final_answer = response.split("FINAL ANSWER: ")[-1].strip()
-    logger.info("> Reformulated answer: ", final_answer)
+    logger.info(f"> Reformulated answer: {final_answer}")
 
     return final_answer
