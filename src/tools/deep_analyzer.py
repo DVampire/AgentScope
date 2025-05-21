@@ -7,6 +7,7 @@ from src.tools import AsyncTool, ToolResult
 from src.models import MessageRole
 from src.tools.markdown.mdconvert import MarkitdownConverter
 from src.logger import logger
+from src.registry import register_tool
 
 
 _DEEP_ANALYZER_DESCRIPTION = """A tool that performs systematic, step-by-step analysis or calculation of a given task, optionally leveraging information from external resources such as attached file or uri to provide comprehensive reasoning and answers.
@@ -31,6 +32,7 @@ Here is the task:
 
 _DEEP_ANALYZER_SUMMARY_DESCRIPTION = """Please conduct a step-by-step analysis of the outputs from different models. Compare their results, identify discrepancies, extract the accurate components, eliminate the incorrect ones, and synthesize a coherent summary."""
 
+@register_tool("deep_analyzer")
 class DeepAnalyzerTool(AsyncTool):
     name: str = "deep_analyzer"
     description: str = _DEEP_ANALYZER_DESCRIPTION

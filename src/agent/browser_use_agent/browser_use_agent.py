@@ -27,8 +27,9 @@ from src.utils.agent_types import (
     AgentAudio,
     AgentImage,
 )
+from src.registry import register_agent
 
-
+@register_agent("browser_use_agent")
 class BrowserUseAgent(AsyncMultiStepAgent):
     def __init__(
         self,
@@ -182,7 +183,7 @@ class BrowserUseAgent(AsyncMultiStepAgent):
         Perform one step in the ReAct framework: the agent thinks, acts, and observes the result.
         Returns None if the step is not final.
         """
-        memory_messages = self.write_memory_to_messages()
+        memory_messages = await self.write_memory_to_messages()
 
         input_messages = memory_messages.copy()
 
