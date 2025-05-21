@@ -4,7 +4,7 @@ from src.models import MessageRole, Model
 from src.logger import logger
 
 
-def prepare_response(original_task: str, inner_messages, reformulation_model: Model) -> str:
+async def prepare_response(original_task: str, inner_messages, reformulation_model: Model) -> str:
     messages = [
         {
             "role": MessageRole.SYSTEM,
@@ -63,7 +63,8 @@ ADDITIONALLY, your FINAL ANSWER MUST adhere to any formatting instructions speci
         }
     )
 
-    response = reformulation_model(messages).content
+    response = await reformulation_model(messages)
+    response = response.content
 
     final_answer = response.split("FINAL ANSWER: ")[-1].strip()
     logger.info("> Reformulated answer: ", final_answer)

@@ -149,15 +149,23 @@ class Config(BaseModel):
         self.searcher_tool = SearcherToolConfig(**config["searcher_tool"])
         self.deep_researcher_tool = DeepResearcherToolConfig(**config["deep_researcher_tool"])
         self.browser_tool = BrowserToolConfig(**config["browser_tool"])
-        
+
         # Agent Config
+        planning_agent_config = AgentConfig(**config["agent"]["planning_agent_config"])
+        planning_agent_config.template_path = assemble_project_path(config["agent"]["planning_agent_config"]["template_path"])
+        deep_analyzer_agent_config = AgentConfig(**config["agent"]["deep_analyzer_agent_config"])
+        deep_analyzer_agent_config.template_path = assemble_project_path(config["agent"]["deep_analyzer_agent_config"]["template_path"])
+        browser_use_agent_config = AgentConfig(**config["agent"]["browser_use_agent_config"])
+        browser_use_agent_config.template_path = assemble_project_path(config["agent"]["browser_use_agent_config"]["template_path"])
+        deep_researcher_agent_config = AgentConfig(**config["agent"]["deep_researcher_agent_config"])
+        deep_researcher_agent_config.template_path = assemble_project_path(config["agent"]["deep_researcher_agent_config"]["template_path"])
         self.agent = HierarchicalAgentConfig(
             name=config["agent"]["name"],
             use_hierarchical_agent=config["agent"]["use_hierarchical_agent"],
-            planning_agent_config=AgentConfig(**config["agent"]["planning_agent_config"]),
-            deep_analyzer_agent_config=AgentConfig(**config["agent"]["deep_analyzer_agent_config"]),
-            browser_use_agent_config=AgentConfig(**config["agent"]["browser_use_agent_config"]),
-            deep_researcher_agent_config=AgentConfig(**config["agent"]["deep_researcher_agent_config"]),
+            planning_agent_config=planning_agent_config,
+            deep_analyzer_agent_config=deep_analyzer_agent_config,
+            browser_use_agent_config=browser_use_agent_config,
+            deep_researcher_agent_config=deep_researcher_agent_config,
         ) 
         
         # Dataset Config

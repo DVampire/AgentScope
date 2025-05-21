@@ -11,7 +11,8 @@ class GAIADataset():
         self.path = path
         self.name = name
         self.split = split
-        
+
+        path = assemble_project_path(path)
         ds = datasets.load_dataset(path, name, trust_remote_code=True)[split]
         ds = ds.rename_columns({"Question": "question", "Final answer": "true_answer", "Level": "task"})
         ds = ds.map(self.preprocess_file_paths, fn_kwargs={"split": split, "path": path})
@@ -39,7 +40,8 @@ class HLEDataset():
         self.path = path
         self.name = name
         self.split = split
-        
+
+        path = assemble_project_path(path)
         ds = datasets.load_dataset(path, trust_remote_code=True)[split]
         ds = ds.rename_columns({"answer": "true_answer", "id": "task_id"})
         ds = ds.map(self.preprocess_file_paths, fn_kwargs={"split": split, "path": path})

@@ -53,13 +53,13 @@ description = "A planning agent that can plan the steps to complete the task."
 max_steps = 20
 template_path = "src/agent/planning_agent/prompts/planning_agent.yaml"
 tools = ["planning"]
-managed_agents = ["deep_analyzer_agent"] # Only use deep_analyzer_agent for now
+managed_agents = ["deep_analyzer_agent", "deep_researcher_agent"]
 
 [agent.deep_analyzer_agent_config]
 model_id = "claude37-sonnet-thinking"
 name = "deep_analyzer_agent"
 description = "Performs systematic, step-by-step analysis..."
-max_steps = 3
+max_steps = 1
 template_path = "src/agent/deep_analyzer_agent/prompts/deep_analyzer_agent.yaml"
 tools = ["deep_analyzer", "python_interpreter"]
 

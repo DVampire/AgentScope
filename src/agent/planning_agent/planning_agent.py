@@ -3,6 +3,7 @@ from typing import (
     Callable,
     Optional
 )
+import json
 import yaml
 from rich.panel import Panel
 from rich.text import Text
@@ -11,7 +12,8 @@ from src.tools import AsyncTool
 from src.exception import (
     AgentGenerationError,
     AgentParsingError,
-
+    AgentToolExecutionError,
+    AgentToolCallError
 )
 from src.base.async_multistep_agent import (PromptTemplates,
                                             populate_template,
@@ -28,6 +30,7 @@ from src.utils.agent_types import (
     AgentImage,
 )
 from src.registry import register_agent
+from src.utils import assemble_project_path
 
 @register_agent("planning_agent")
 class PlanningAgent(AsyncMultiStepAgent):
@@ -69,7 +72,8 @@ class PlanningAgent(AsyncMultiStepAgent):
             final_answer_checks=final_answer_checks,
         )
 
-        with open(self.config.template_path, "r") as f:
+        template_path = assemble_project_path(self.config.template_path)
+        with open(template_path, "r") as f:
             self.prompt_templates = yaml.safe_load(f)
         
         self.system_prompt = self.initialize_system_prompt()
