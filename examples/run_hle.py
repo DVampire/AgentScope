@@ -120,7 +120,6 @@ async def main():
     logger.info(f"Initializing logger: {config.log_path}")
     logger.info(f"Load config: {config}")
 
-
     # Registed models
     logger.info("Registed models: %s", ", ".join(REGISTED_MODELS.keys()))
     
@@ -135,7 +134,7 @@ async def main():
     # Load answers
     tasks_to_run = get_tasks_to_run(config.save_path, dataset)
     logger.info(f"Loaded {len(tasks_to_run)} tasks to run.")
-    
+
     # Run tasks
     batch_size = getattr(config, "concurrency", 4)
     for i in range(0, len(tasks_to_run), batch_size):

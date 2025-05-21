@@ -60,7 +60,7 @@ class DeepAnalyzerTool(AsyncTool):
 
         self.analyzer_models = {
             'gemini-2.5-pro': REGISTED_MODELS['gemini-2.5-pro'],
-            'o3': REGISTED_MODELS['o3'],
+            # 'o3': REGISTED_MODELS['o3'],
         }
         self.summary_model = REGISTED_MODELS['gemini-2.5-pro']
 

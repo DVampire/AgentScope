@@ -625,7 +625,7 @@ You have been provided with these additional arguments, that you can access usin
         )
         if self.provide_run_summary:
             answer += "\n\nFor more detail, find below a summary of this agent's work:\n<summary_of_work>\n"
-            async for message in self.write_memory_to_messages(summary_mode=True):
+            for message in await self.write_memory_to_messages(summary_mode=True):
                 content = message["content"]
                 answer += "\n" + truncate_content(str(content)) + "\n---"
             answer += "\n</summary_of_work>"
@@ -809,7 +809,7 @@ You have been provided with these additional arguments, that you can access usin
         # Load tools
         tools = []
         for tool_info in agent_dict["tools"]:
-            tools.append(Tool.from_code(tool_info["code"]))
+            tools.append(AsyncTool.from_code(tool_info["code"]))
         # Load managed agents
         managed_agents = []
         for managed_agent_name, managed_agent_class_name in agent_dict["managed_agents"].items():
