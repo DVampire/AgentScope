@@ -8,6 +8,8 @@ from src.models.base import (ApiModel,
                              MessageRole)
 from src.tools import Tool
 from src.models.message_manager import MessageManager
+from src.logger import logger
+
 
 class OpenAIServerModel(ApiModel):
     """This model connects to an OpenAI-compatible API server.

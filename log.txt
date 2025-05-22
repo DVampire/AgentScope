@@ -489,3 +489,449 @@ Steps:
 [92m2025-05-21 17:56:59 - logger:INFO[0m: logger.py:77 - [Step 1: Duration 10.45 seconds| Input tokens: 2,961 | Output tokens: 77]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 2 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 [92m2025-05-21 17:57:03 - logger:INFO[0m: logger.py:77 - [Step 2: Duration 4.05 seconds| Input tokens: 5,922 | Output tokens: 154]
+[92m2025-05-22 13:18:30 - logger:INFO[0m: run_example.py:20 - Initializing logger: log.txt
+[92m2025-05-22 13:18:30 - logger:INFO[0m: run_example.py:23 - Registed models: gpt-4o, gpt-4.1, o1, o3, whisper, claude37-sonnet, gemini-2.5-pro, gpt-4o-search-preview, claude37-sonnet-thinking
+╭──────────────────────────────────── New run - planning_agent ────────────────────────────────────╮
+│                                                                                                  │
+│ You have one question to answer. It is paramount that you provide a correct answer. Give it all  │
+│ you can: I know for a fact that you have access to all the relevant tools and team members to    │
+│ solve it and find the correct answer (the answer does exist).                                    │
+│ Failure or 'I cannot answer' or 'None found' will not be tolerated, success will be rewarded.    │
+│ * You must begin by creating a detailed plan that explicitly incorporates the available TOOLS    │
+│ and TEAM MEMBERS. Then, follow the plan step by step to solve the complex task.                  │
+│ * If the task involves attached files, you are required to specify the absolute path in your     │
+│ plan and share it explicitly with your team members.                                             │
+│ * If the task need to use the team members, you are required to provide the ORIGINAL TASK as the │
+│ `task` parameter for the agents to understand the task. DO NOT modify the task.                  │
+│ * If the task involves interacting with web pages or conducting web searches, start with the     │
+│ `browser_use_agent` and follow up with the `deep_researcher_agent`.                              │
+│     - Firstly, please use `browser_use_agent` to search and interact with the most relevant web  │
+│ pages to find the answer. If the answer is found, please output the answer directly.             │
+│     - Secondly, if the answer is not found, please use `deep_researcher_agent` to perform        │
+│ extensive web searches to find the answer.                                                       │
+│ * If the task involves analyzing an ATTACHED FILE, a URL, performing CALCULATIONS, or playing    │
+│ GAME, please use `deep_analyzer_agent`.                                                          │
+│ * Run verification steps if that's needed, you must make sure you find the correct answer!       │
+│                                                                                                  │
+│ Here is the task:                                                                                │
+│ Search for the latest research paper on the topic of 'AI Agent' and summarize it.                │
+│                                                                                                  │
+╰─ OpenAIServerModel - claude-3.7-sonnet-thinking ─────────────────────────────────────────────────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[92m2025-05-22 13:18:33 - logger:ERROR[0m: error.py:10 - Error while generating output:
+Connection error.
+[92m2025-05-22 13:18:33 - logger:INFO[0m: logger.py:77 - [Step 1: Duration 1.19 seconds]
+[92m2025-05-22 13:19:12 - logger:INFO[0m: run_example.py:20 - Initializing logger: log.txt
+[92m2025-05-22 13:19:12 - logger:INFO[0m: run_example.py:23 - Registed models: gpt-4o, gpt-4.1, o1, o3, whisper, claude37-sonnet, gemini-2.5-pro, gpt-4o-search-preview, claude37-sonnet-thinking
+╭──────────────────────────────────── New run - planning_agent ────────────────────────────────────╮
+│                                                                                                  │
+│ You have one question to answer. It is paramount that you provide a correct answer. Give it all  │
+│ you can: I know for a fact that you have access to all the relevant tools and team members to    │
+│ solve it and find the correct answer (the answer does exist).                                    │
+│ Failure or 'I cannot answer' or 'None found' will not be tolerated, success will be rewarded.    │
+│ * You must begin by creating a detailed plan that explicitly incorporates the available TOOLS    │
+│ and TEAM MEMBERS. Then, follow the plan step by step to solve the complex task.                  │
+│ * If the task involves attached files, you are required to specify the absolute path in your     │
+│ plan and share it explicitly with your team members.                                             │
+│ * If the task need to use the team members, you are required to provide the ORIGINAL TASK as the │
+│ `task` parameter for the agents to understand the task. DO NOT modify the task.                  │
+│ * If the task involves interacting with web pages or conducting web searches, start with the     │
+│ `browser_use_agent` and follow up with the `deep_researcher_agent`.                              │
+│     - Firstly, please use `browser_use_agent` to search and interact with the most relevant web  │
+│ pages to find the answer. If the answer is found, please output the answer directly.             │
+│     - Secondly, if the answer is not found, please use `deep_researcher_agent` to perform        │
+│ extensive web searches to find the answer.                                                       │
+│ * If the task involves analyzing an ATTACHED FILE, a URL, performing CALCULATIONS, or playing    │
+│ GAME, please use `deep_analyzer_agent`.                                                          │
+│ * Run verification steps if that's needed, you must make sure you find the correct answer!       │
+│                                                                                                  │
+│ Here is the task:                                                                                │
+│ Search for the latest research paper on the topic of 'AI Agent' and summarize it.                │
+│                                                                                                  │
+╰─ OpenAIServerModel - claude-3.7-sonnet-thinking ─────────────────────────────────────────────────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[92m2025-05-22 13:19:50 - logger:ERROR[0m: error.py:10 - Error while generating output:
+'NoneType' object has no attribute 'prompt_tokens'
+[92m2025-05-22 13:19:50 - logger:INFO[0m: logger.py:77 - [Step 1: Duration 33.67 seconds]
+[92m2025-05-22 13:20:40 - logger:INFO[0m: run_example.py:20 - Initializing logger: log.txt
+[92m2025-05-22 13:20:40 - logger:INFO[0m: run_example.py:23 - Registed models: gpt-4o, gpt-4.1, o1, o3, whisper, claude37-sonnet, gemini-2.5-pro, gpt-4o-search-preview, claude37-sonnet-thinking
+╭──────────────────────────────────── New run - planning_agent ────────────────────────────────────╮
+│                                                                                                  │
+│ You have one question to answer. It is paramount that you provide a correct answer. Give it all  │
+│ you can: I know for a fact that you have access to all the relevant tools and team members to    │
+│ solve it and find the correct answer (the answer does exist).                                    │
+│ Failure or 'I cannot answer' or 'None found' will not be tolerated, success will be rewarded.    │
+│ * You must begin by creating a detailed plan that explicitly incorporates the available TOOLS    │
+│ and TEAM MEMBERS. Then, follow the plan step by step to solve the complex task.                  │
+│ * If the task involves attached files, you are required to specify the absolute path in your     │
+│ plan and share it explicitly with your team members.                                             │
+│ * If the task need to use the team members, you are required to provide the ORIGINAL TASK as the │
+│ `task` parameter for the agents to understand the task. DO NOT modify the task.                  │
+│ * If the task involves interacting with web pages or conducting web searches, start with the     │
+│ `browser_use_agent` and follow up with the `deep_researcher_agent`.                              │
+│     - Firstly, please use `browser_use_agent` to search and interact with the most relevant web  │
+│ pages to find the answer. If the answer is found, please output the answer directly.             │
+│     - Secondly, if the answer is not found, please use `deep_researcher_agent` to perform        │
+│ extensive web searches to find the answer.                                                       │
+│ * If the task involves analyzing an ATTACHED FILE, a URL, performing CALCULATIONS, or playing    │
+│ GAME, please use `deep_analyzer_agent`.                                                          │
+│ * Run verification steps if that's needed, you must make sure you find the correct answer!       │
+│                                                                                                  │
+│ Here is the task:                                                                                │
+│ Search for the latest research paper on the topic of 'AI Agent' and summarize it.                │
+│                                                                                                  │
+╰─ OpenAIServerModel - claude-3.7-sonnet-thinking ─────────────────────────────────────────────────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[92m2025-05-22 13:21:11 - logger:ERROR[0m: error.py:10 - Error while generating output:
+'NoneType' object has no attribute 'prompt_tokens'
+[92m2025-05-22 13:21:11 - logger:INFO[0m: logger.py:77 - [Step 1: Duration 26.92 seconds]
+[92m2025-05-22 13:22:38 - logger:INFO[0m: run_example.py:20 - Initializing logger: log.txt
+[92m2025-05-22 13:22:38 - logger:INFO[0m: run_example.py:23 - Registed models: gpt-4o, gpt-4.1, o1, o3, whisper, claude37-sonnet, gemini-2.5-pro, gpt-4o-search-preview, claude37-sonnet-thinking
+╭──────────────────────────────────── New run - planning_agent ────────────────────────────────────╮
+│                                                                                                  │
+│ You have one question to answer. It is paramount that you provide a correct answer. Give it all  │
+│ you can: I know for a fact that you have access to all the relevant tools and team members to    │
+│ solve it and find the correct answer (the answer does exist).                                    │
+│ Failure or 'I cannot answer' or 'None found' will not be tolerated, success will be rewarded.    │
+│ * You must begin by creating a detailed plan that explicitly incorporates the available TOOLS    │
+│ and TEAM MEMBERS. Then, follow the plan step by step to solve the complex task.                  │
+│ * If the task involves attached files, you are required to specify the absolute path in your     │
+│ plan and share it explicitly with your team members.                                             │
+│ * If the task need to use the team members, you are required to provide the ORIGINAL TASK as the │
+│ `task` parameter for the agents to understand the task. DO NOT modify the task.                  │
+│ * If the task involves interacting with web pages or conducting web searches, start with the     │
+│ `browser_use_agent` and follow up with the `deep_researcher_agent`.                              │
+│     - Firstly, please use `browser_use_agent` to search and interact with the most relevant web  │
+│ pages to find the answer. If the answer is found, please output the answer directly.             │
+│     - Secondly, if the answer is not found, please use `deep_researcher_agent` to perform        │
+│ extensive web searches to find the answer.                                                       │
+│ * If the task involves analyzing an ATTACHED FILE, a URL, performing CALCULATIONS, or playing    │
+│ GAME, please use `deep_analyzer_agent`.                                                          │
+│ * Run verification steps if that's needed, you must make sure you find the correct answer!       │
+│                                                                                                  │
+│ Here is the task:                                                                                │
+│ Search for the latest research paper on the topic of 'AI Agent' and summarize it.                │
+│                                                                                                  │
+╰─ OpenAIServerModel - claude-3.7-sonnet-thinking ─────────────────────────────────────────────────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Output message of the LLM: ─────────────────────────────────────────────────────────────────────────
+ChatCompletion(id='gen-1747891365-xGlEjyWxXFkWvxRRDN4B', choices=[Choice(finish_reason='tool_calls',
+index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant',   
+annotations=None, audio=None, function_call=None,                                                   
+tool_calls=[ChatCompletionMessageToolCall(id='tooluse_G0u1v8TdR9iGq5PlNREHQw',                      
+function=Function(arguments='{"action": "create", "plan_id": "ai_agent_research", "title": "Find and
+Summarize Latest AI Agent Research Paper", "steps": ["Use browser_use_agent to search for the latest
+research papers on \'AI Agent\'","If browser_use_agent doesn\'t find specific latest papers, use    
+deep_researcher_agent to conduct extensive search","Use deep_analyzer_agent to analyze the          
+identified paper and create a comprehensive summary","Verify the summary is complete and            
+accurate","Compile and provide the final answer with the paper details and summary"]}',             
+name='planning'), type='function', index=0)], reasoning=None), native_finish_reason='tool_calls')], 
+created=1747891365, model='anthropic/claude-3.7-sonnet:thinking', object='chat.completion',         
+service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=81,             
+prompt_tokens=2961, total_tokens=3042, completion_tokens_details=None, prompt_tokens_details=None), 
+provider='Amazon Bedrock')                                                                          
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Calling tool: 'planning' with arguments: {'action': 'create', 'plan_id': 'ai_agent_research',    │
+│ 'title': 'Find and Summarize Latest AI Agent Research Paper', 'steps': ["Use browser_use_agent   │
+│ to search for the latest research papers on 'AI Agent'", "If browser_use_agent doesn't find      │
+│ specific latest papers, use deep_researcher_agent to conduct extensive search", 'Use             │
+│ deep_analyzer_agent to analyze the identified paper and create a comprehensive summary', 'Verify │
+│ the summary is complete and accurate', 'Compile and provide the final answer with the paper      │
+│ details and summary']}                                                                           │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[92m2025-05-22 13:22:53 - logger:INFO[0m: planning.py:137 - Plan created successfully with ID: ai_agent_research
+
+Plan: Find and Summarize Latest AI Agent Research Paper (ID: ai_agent_research)
+================================================================================
+
+Progress: 0/5 steps completed (0.0%)
+Status: 0 completed, 0 in progress, 0 blocked, 5 not started
+
+Steps:
+0. [ ] Use browser_use_agent to search for the latest research papers on 'AI Agent'
+1. [ ] If browser_use_agent doesn't find specific latest papers, use deep_researcher_agent to conduct extensive search
+2. [ ] Use deep_analyzer_agent to analyze the identified paper and create a comprehensive summary
+3. [ ] Verify the summary is complete and accurate
+4. [ ] Compile and provide the final answer with the paper details and summary
+
+[92m2025-05-22 13:22:54 - logger:INFO[0m: logger.py:77 - Observations: Plan created successfully with ID: ai_agent_research
+
+Plan: Find and Summarize Latest AI Agent Research Paper (ID: ai_agent_research)
+================================================================================
+
+Progress: 0/5 steps completed (0.0%)
+Status: 0 completed, 0 in progress, 0 blocked, 5 not started
+
+Steps:
+0. | ] Use browser_use_agent to search for the latest research papers on 'AI Agent'
+1. | ] If browser_use_agent doesn't find specific latest papers, use deep_researcher_agent to conduct extensive search
+2. | ] Use deep_analyzer_agent to analyze the identified paper and create a comprehensive summary
+3. | ] Verify the summary is complete and accurate
+4. | ] Compile and provide the final answer with the paper details and summary
+[92m2025-05-22 13:22:54 - logger:INFO[0m: logger.py:77 - [Step 1: Duration 10.81 seconds| Input tokens: 2,961 | Output tokens: 81]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 2 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[92m2025-05-22 13:23:14 - logger:ERROR[0m: error.py:10 - Error while generating output:
+'NoneType' object has no attribute 'prompt_tokens'
+[92m2025-05-22 13:23:14 - logger:INFO[0m: logger.py:77 - [Step 2: Duration 20.87 seconds| Input tokens: 5,922 | Output tokens: 162]
+[92m2025-05-22 13:23:53 - logger:INFO[0m: run_example.py:20 - Initializing logger: log.txt
+[92m2025-05-22 13:23:53 - logger:INFO[0m: run_example.py:23 - Registed models: gpt-4o, gpt-4.1, o1, o3, whisper, claude37-sonnet, gemini-2.5-pro, gpt-4o-search-preview, claude37-sonnet-thinking
+╭──────────────────────────────────── New run - planning_agent ────────────────────────────────────╮
+│                                                                                                  │
+│ You have one question to answer. It is paramount that you provide a correct answer. Give it all  │
+│ you can: I know for a fact that you have access to all the relevant tools and team members to    │
+│ solve it and find the correct answer (the answer does exist).                                    │
+│ Failure or 'I cannot answer' or 'None found' will not be tolerated, success will be rewarded.    │
+│ * You must begin by creating a detailed plan that explicitly incorporates the available TOOLS    │
+│ and TEAM MEMBERS. Then, follow the plan step by step to solve the complex task.                  │
+│ * If the task involves attached files, you are required to specify the absolute path in your     │
+│ plan and share it explicitly with your team members.                                             │
+│ * If the task need to use the team members, you are required to provide the ORIGINAL TASK as the │
+│ `task` parameter for the agents to understand the task. DO NOT modify the task.                  │
+│ * If the task involves interacting with web pages or conducting web searches, start with the     │
+│ `browser_use_agent` and follow up with the `deep_researcher_agent`.                              │
+│     - Firstly, please use `browser_use_agent` to search and interact with the most relevant web  │
+│ pages to find the answer. If the answer is found, please output the answer directly.             │
+│     - Secondly, if the answer is not found, please use `deep_researcher_agent` to perform        │
+│ extensive web searches to find the answer.                                                       │
+│ * If the task involves analyzing an ATTACHED FILE, a URL, performing CALCULATIONS, or playing    │
+│ GAME, please use `deep_analyzer_agent`.                                                          │
+│ * Run verification steps if that's needed, you must make sure you find the correct answer!       │
+│                                                                                                  │
+│ Here is the task:                                                                                │
+│ Search for the latest research paper on the topic of 'AI Agent' and summarize it.                │
+│                                                                                                  │
+╰─ OpenAIServerModel - claude-3.7-sonnet-thinking ─────────────────────────────────────────────────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Output message of the LLM: ─────────────────────────────────────────────────────────────────────────
+ChatCompletion(id='gen-1747891441-aM3fwzHvXDbE8W5U5D5p', choices=[Choice(finish_reason='tool_calls',
+index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant',   
+annotations=None, audio=None, function_call=None,                                                   
+tool_calls=[ChatCompletionMessageToolCall(id='tooluse_R_u_JRbGSDeLL6yFxfweYw',                      
+function=Function(arguments='{"action": "create", "plan_id": "search-ai-agent-research", "title":   
+"Search and Summarize Latest Research on AI Agents", "steps": ["Use browser_use_agent to search for 
+the latest research papers on \'AI Agent\' topic, focusing on academic sources like arXiv, Google   
+Scholar, or ACM Digital Library","If browser_use_agent doesn\'t find conclusive results, use        
+deep_researcher_agent to perform a more extensive search","Once a paper is identified as the latest 
+research, use deep_analyzer_agent to analyze the paper in detail and prepare a comprehensive        
+summary","Verify the findings by cross-checking publication dates and relevance of the research     
+paper","Present the final summary with key findings, methodology, and contributions of the research 
+paper"]}', name='planning'), type='function', index=0)], reasoning=None),                           
+native_finish_reason='tool_calls')], created=1747891441,                                            
+model='anthropic/claude-3.7-sonnet:thinking', object='chat.completion', service_tier=None,          
+system_fingerprint=None, usage=CompletionUsage(completion_tokens=86, prompt_tokens=2961,            
+total_tokens=3047, completion_tokens_details=None, prompt_tokens_details=None), provider='Amazon    
+Bedrock')                                                                                           
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Calling tool: 'planning' with arguments: {'action': 'create', 'plan_id':                         │
+│ 'search-ai-agent-research', 'title': 'Search and Summarize Latest Research on AI Agents',        │
+│ 'steps': ["Use browser_use_agent to search for the latest research papers on 'AI Agent' topic,   │
+│ focusing on academic sources like arXiv, Google Scholar, or ACM Digital Library", "If            │
+│ browser_use_agent doesn't find conclusive results, use deep_researcher_agent to perform a more   │
+│ extensive search", 'Once a paper is identified as the latest research, use deep_analyzer_agent   │
+│ to analyze the paper in detail and prepare a comprehensive summary', 'Verify the findings by     │
+│ cross-checking publication dates and relevance of the research paper', 'Present the final        │
+│ summary with key findings, methodology, and contributions of the research paper']}               │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[92m2025-05-22 13:24:10 - logger:INFO[0m: planning.py:137 - Plan created successfully with ID: search-ai-agent-research
+
+Plan: Search and Summarize Latest Research on AI Agents (ID: search-ai-agent-research)
+=======================================================================================
+
+Progress: 0/5 steps completed (0.0%)
+Status: 0 completed, 0 in progress, 0 blocked, 5 not started
+
+Steps:
+0. [ ] Use browser_use_agent to search for the latest research papers on 'AI Agent' topic, focusing on academic sources like arXiv, Google Scholar, or ACM Digital Library
+1. [ ] If browser_use_agent doesn't find conclusive results, use deep_researcher_agent to perform a more extensive search
+2. [ ] Once a paper is identified as the latest research, use deep_analyzer_agent to analyze the paper in detail and prepare a comprehensive summary
+3. [ ] Verify the findings by cross-checking publication dates and relevance of the research paper
+4. [ ] Present the final summary with key findings, methodology, and contributions of the research paper
+
+[92m2025-05-22 13:24:10 - logger:INFO[0m: logger.py:77 - Observations: Plan created successfully with ID: search-ai-agent-research
+
+Plan: Search and Summarize Latest Research on AI Agents (ID: search-ai-agent-research)
+=======================================================================================
+
+Progress: 0/5 steps completed (0.0%)
+Status: 0 completed, 0 in progress, 0 blocked, 5 not started
+
+Steps:
+0. | ] Use browser_use_agent to search for the latest research papers on 'AI Agent' topic, focusing on academic sources like arXiv, Google Scholar, or ACM Digital Library
+1. | ] If browser_use_agent doesn't find conclusive results, use deep_researcher_agent to perform a more extensive search
+2. | ] Once a paper is identified as the latest research, use deep_analyzer_agent to analyze the paper in detail and prepare a comprehensive summary
+3. | ] Verify the findings by cross-checking publication dates and relevance of the research paper
+4. | ] Present the final summary with key findings, methodology, and contributions of the research paper
+[92m2025-05-22 13:24:10 - logger:INFO[0m: logger.py:77 - [Step 1: Duration 12.49 seconds| Input tokens: 2,961 | Output tokens: 86]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 2 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Output message of the LLM: ─────────────────────────────────────────────────────────────────────────
+ChatCompletion(id='gen-1747891451-yXzDCAmqiEudPhKfLK0g', choices=[Choice(finish_reason='tool_calls',
+index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant',   
+annotations=None, audio=None, function_call=None,                                                   
+tool_calls=[ChatCompletionMessageToolCall(id='tooluse_Zig9oDaeQpyceAoFJs-zhA',                      
+function=Function(arguments='{"action": "set_active", "plan_id": "search-ai-agent-research"}',      
+name='planning'), type='function', index=0)], reasoning=None), native_finish_reason='tool_calls')], 
+created=1747891451, model='anthropic/claude-3.7-sonnet:thinking', object='chat.completion',         
+service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=35,             
+prompt_tokens=3637, total_tokens=3672, completion_tokens_details=None, prompt_tokens_details=None), 
+provider='Amazon Bedrock')                                                                          
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Calling tool: 'planning' with arguments: {'action': 'set_active', 'plan_id':                     │
+│ 'search-ai-agent-research'}                                                                      │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[92m2025-05-22 13:24:14 - logger:INFO[0m: planning.py:290 - Plan 'search-ai-agent-research' is now the active plan.
+
+Plan: Search and Summarize Latest Research on AI Agents (ID: search-ai-agent-research)
+=======================================================================================
+
+Progress: 0/5 steps completed (0.0%)
+Status: 0 completed, 0 in progress, 0 blocked, 5 not started
+
+Steps:
+0. [ ] Use browser_use_agent to search for the latest research papers on 'AI Agent' topic, focusing on academic sources like arXiv, Google Scholar, or ACM Digital Library
+1. [ ] If browser_use_agent doesn't find conclusive results, use deep_researcher_agent to perform a more extensive search
+2. [ ] Once a paper is identified as the latest research, use deep_analyzer_agent to analyze the paper in detail and prepare a comprehensive summary
+3. [ ] Verify the findings by cross-checking publication dates and relevance of the research paper
+4. [ ] Present the final summary with key findings, methodology, and contributions of the research paper
+
+[92m2025-05-22 13:24:14 - logger:INFO[0m: logger.py:77 - Observations: Plan 'search-ai-agent-research' is now the active plan.
+
+Plan: Search and Summarize Latest Research on AI Agents (ID: search-ai-agent-research)
+=======================================================================================
+
+Progress: 0/5 steps completed (0.0%)
+Status: 0 completed, 0 in progress, 0 blocked, 5 not started
+
+Steps:
+0. | ] Use browser_use_agent to search for the latest research papers on 'AI Agent' topic, focusing on academic sources like arXiv, Google Scholar, or ACM Digital Library
+1. | ] If browser_use_agent doesn't find conclusive results, use deep_researcher_agent to perform a more extensive search
+2. | ] Once a paper is identified as the latest research, use deep_analyzer_agent to analyze the paper in detail and prepare a comprehensive summary
+3. | ] Verify the findings by cross-checking publication dates and relevance of the research paper
+4. | ] Present the final summary with key findings, methodology, and contributions of the research paper
+[92m2025-05-22 13:24:14 - logger:INFO[0m: logger.py:77 - [Step 2: Duration 4.06 seconds| Input tokens: 6,598 | Output tokens: 121]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 3 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Output message of the LLM: ─────────────────────────────────────────────────────────────────────────
+ChatCompletion(id='gen-1747891456-oDUEVgFldYIYibKZlMtF', choices=[Choice(finish_reason='tool_calls',
+index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant',   
+annotations=None, audio=None, function_call=None,                                                   
+tool_calls=[ChatCompletionMessageToolCall(id='tooluse_KB-Qj3-_RM6iOhQj7rBhMw',                      
+function=Function(arguments='{"action": "mark_step", "step_index": 0, "step_status":                
+"in_progress"}', name='planning'), type='function', index=0)], reasoning=None),                     
+native_finish_reason='tool_calls')], created=1747891456,                                            
+model='anthropic/claude-3.7-sonnet:thinking', object='chat.completion', service_tier=None,          
+system_fingerprint=None, usage=CompletionUsage(completion_tokens=34, prompt_tokens=4002,            
+total_tokens=4036, completion_tokens_details=None, prompt_tokens_details=None), provider='Amazon    
+Bedrock')                                                                                           
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Calling tool: 'planning' with arguments: {'action': 'mark_step', 'step_index': 0, 'step_status': │
+│ 'in_progress'}                                                                                   │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[92m2025-05-22 13:24:19 - logger:INFO[0m: planning.py:361 - Step 0 updated successfully in plan 'search-ai-agent-research'.
+
+Plan: Search and Summarize Latest Research on AI Agents (ID: search-ai-agent-research)
+=======================================================================================
+
+Progress: 0/5 steps completed (0.0%)
+Status: 0 completed, 1 in progress, 0 blocked, 4 not started
+
+Steps:
+0. [→] Use browser_use_agent to search for the latest research papers on 'AI Agent' topic, focusing on academic sources like arXiv, Google Scholar, or ACM Digital Library
+1. [ ] If browser_use_agent doesn't find conclusive results, use deep_researcher_agent to perform a more extensive search
+2. [ ] Once a paper is identified as the latest research, use deep_analyzer_agent to analyze the paper in detail and prepare a comprehensive summary
+3. [ ] Verify the findings by cross-checking publication dates and relevance of the research paper
+4. [ ] Present the final summary with key findings, methodology, and contributions of the research paper
+
+[92m2025-05-22 13:24:19 - logger:INFO[0m: logger.py:77 - Observations: Step 0 updated successfully in plan 'search-ai-agent-research'.
+
+Plan: Search and Summarize Latest Research on AI Agents (ID: search-ai-agent-research)
+=======================================================================================
+
+Progress: 0/5 steps completed (0.0%)
+Status: 0 completed, 1 in progress, 0 blocked, 4 not started
+
+Steps:
+0. |→] Use browser_use_agent to search for the latest research papers on 'AI Agent' topic, focusing on academic sources like arXiv, Google Scholar, or ACM Digital Library
+1. | ] If browser_use_agent doesn't find conclusive results, use deep_researcher_agent to perform a more extensive search
+2. | ] Once a paper is identified as the latest research, use deep_analyzer_agent to analyze the paper in detail and prepare a comprehensive summary
+3. | ] Verify the findings by cross-checking publication dates and relevance of the research paper
+4. | ] Present the final summary with key findings, methodology, and contributions of the research paper
+[92m2025-05-22 13:24:19 - logger:INFO[0m: logger.py:77 - [Step 3: Duration 5.02 seconds| Input tokens: 10,600 | Output tokens: 155]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 4 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Output message of the LLM: ─────────────────────────────────────────────────────────────────────────
+ChatCompletion(id='gen-1747891461-HUbBvXPDccmFUUrLtFhW', choices=[Choice(finish_reason='tool_calls',
+index=0, logprobs=None, message=ChatCompletionMessage(content='', refusal=None, role='assistant',   
+annotations=None, audio=None, function_call=None,                                                   
+tool_calls=[ChatCompletionMessageToolCall(id='tooluse_k0vCks_qQp2k7dus90ohOw',                      
+function=Function(arguments='{"task": "Search for the latest research paper on the topic of \'AI    
+Agent\' and summarize it. Look for the most recent publications on arXiv, Google Scholar, or other  
+academic databases. Focus on papers published in 2024 or late 2023. Please provide the full title,  
+authors, publication date, link to the paper, and any key information about the paper\'s            
+content."}', name='browser_use_agent'), type='function', index=0)], reasoning=None),                
+native_finish_reason='tool_calls')], created=1747891461,                                            
+model='anthropic/claude-3.7-sonnet:thinking', object='chat.completion', service_tier=None,          
+system_fingerprint=None, usage=CompletionUsage(completion_tokens=29, prompt_tokens=4383,            
+total_tokens=4412, completion_tokens_details=None, prompt_tokens_details=None), provider='Amazon    
+Bedrock')                                                                                           
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Calling tool: 'browser_use_agent' with arguments: {'task': "Search for the latest research paper │
+│ on the topic of 'AI Agent' and summarize it. Look for the most recent publications on arXiv,     │
+│ Google Scholar, or other academic databases. Focus on papers published in 2024 or late 2023.     │
+│ Please provide the full title, authors, publication date, link to the paper, and any key         │
+│ information about the paper's content."}                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭────────────────────────────────── New run - browser_use_agent ───────────────────────────────────╮
+│                                                                                                  │
+│ You can search for the most relevant web pages and interact with them to accurately find answers │
+│ to tasks.                                                                                        │
+│ * Please use `auto_browser_use` tool to search the web and interact with them to find the        │
+│ answer. When you require to use it, please provide the original task as the `task` parameter for │
+│ the tool. DO NOT modify the task.                                                                │
+│   - When you need to extract the content from the web page, do not ignore the content in the web │
+│ screen shot.                                                                                     │
+│ * You can also use the `python_interpreter` tool to run any code to support your analysis.       │
+│                                                                                                  │
+│ Here is the task:                                                                                │
+│ You're a helpful agent named 'browser_use_agent'.                                                │
+│ You have been submitted this task by your manager.                                               │
+│ ---                                                                                              │
+│ Search for the latest research paper on the topic of 'AI Agent' and summarize it. Look for the   │
+│ most recent publications on arXiv, Google Scholar, or other academic databases. Focus on papers  │
+│ published in 2024 or late 2023. Please provide the full title, authors, publication date, link   │
+│ to the paper, and any key information about the paper's content.                                 │
+│ ---                                                                                              │
+│ You're helping your manager solve a wider task: so make sure to not provide a one-line answer,   │
+│ but give as much information as possible to give them a clear understanding of the answer.       │
+│                                                                                                  │
+│ Your `final_answer` WILL HAVE to contain these parts:                                            │
+│ ### 1. Task outcome (short version):                                                             │
+│ ### 2. Task outcome (extremely detailed version):                                                │
+│ ### 3. Additional context (if relevant):                                                         │
+│                                                                                                  │
+│ Put all these in your `final_answer` tool, everything that you do not pass as an argument to     │
+│ `final_answer` will be lost.                                                                     │
+│ And even if your task resolution is not successful, please return as much context as possible,   │
+│ so that your manager can act upon this feedback.                                                 │
+│                                                                                                  │
+╰─ LiteLLMModel - openai/gpt-4.1 ──────────────────────────────────────────────────────────────────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Output message of the LLM: ─────────────────────────────────────────────────────────────────────────
+ModelResponse(id='chatcmpl-BZshnjIRxU2xQIP8vapigNwkqxIqm', created=1747891467,                      
+model='gpt-4.1-2025-04-14', object='chat.completion', system_fingerprint='fp_07e970ab25',           
+choices=[Choices(finish_reason='tool_calls', index=0, message=Message(content=None,                 
+role='assistant',                                                                                   
+tool_calls=[ChatCompletionMessageToolCall(function=Function(arguments='{"task":"Search for the      
+latest research paper on the topic of \'AI Agent\' on arXiv or Google Scholar, focusing on papers   
+published in 2024 or late 2023. Find the full title, authors, publication date, link to the paper,  
+and summarize key information about the paper\'s content."}', name='auto_browser_use'),             
+id='call_suwNJdEtwmh5aKuaMXocP3xs', type='function')], function_call=None,                          
+provider_specific_fields={'refusal': None}, annotations=[]))], usage=Usage(completion_tokens=76,    
+prompt_tokens=1553, total_tokens=1629,                                                              
+completion_tokens_details=CompletionTokensDetailsWrapper(accepted_prediction_tokens=0,              
+audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0, text_tokens=None),                
+prompt_tokens_details=PromptTokensDetailsWrapper(audio_tokens=0, cached_tokens=0, text_tokens=None, 
+image_tokens=None)), service_tier=None)                                                             
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Calling tool: 'auto_browser_use' with arguments: {'task': "Search for the latest research paper  │
+│ on the topic of 'AI Agent' on arXiv or Google Scholar, focusing on papers published in 2024 or   │
+│ late 2023. Find the full title, authors, publication date, link to the paper, and summarize key  │
+│ information about the paper's content."}                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
